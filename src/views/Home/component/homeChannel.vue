@@ -8,6 +8,7 @@
   import axios from 'axios'
   import { ref } from 'vue'
 
+  //频道数据，ts限制
   interface INavItem {
     id: string
     text: string
@@ -21,7 +22,6 @@
     url: '/navList',
     method: 'get'
   }).then(res => {
-    console.log(res)
     list.value = res.data.result
   })
 </script>
